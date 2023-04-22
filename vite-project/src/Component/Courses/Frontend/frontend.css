@@ -1,0 +1,15 @@
+/* HOME BUTTON */
+
+.btn-sign{
+  display: flex;
+  padding: 3px;
+  /* margin: 15px 18px; */
+  /* border: 2px solid red; */
+}
+
+.btn-sign > button{
+  margin-left: 12px;
+  color: white;
+  background-color: brown;
+}
+

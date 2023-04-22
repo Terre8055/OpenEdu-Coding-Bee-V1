@@ -1,0 +1,42 @@
+#error-page{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    gap: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.err-code{
+    font-size: 5rem
+}
+
+.err-message{
+    margin-left: 80px;
+}
+
+
+.err-type{
+    margin-left: 100px;
+}
+
+button{
+    width: 15rem;
+    height: 2.54rem;
+    margin-left: 80px;
+    cursor: pointer;
+    background-color: rgba(255, 150, 150, 0.728);
+    border: none;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: rgb(254, 58, 58);
+}

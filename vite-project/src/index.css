@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: #f8f8f8;
+  height: 100vh; */
+}
+
+
+:root {
+  --font-family: 'Manrope', sans-serif;
+
+  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  
+  --color-bg: #040C18;
+  --color-footer : #031B34;
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;
+}
+
+.tutorial-container {
+  display: flex;
+  height: 100vh;
+  /* border: 2px solid red; */
+}
+
+.tutorial-list {
+  flex: 1 0 20%;
+  background-color: #ebebeb;
+  padding: 20px;
+}
+
+.tutorial-list h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.tutorial-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tutorial-list li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: 2px solid rgba(194, 135, 135, 0.211);
+  padding: 15px;
+  text-align: center;
+  
+}
+
+.tutorial-list li:hover {
+  color: #fff;
+  background-color: #f2d1d1;
+}
+
+.tutorial-videos {
+  flex: 1 0 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.video-list {
+  flex: 1 0 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  overflow-y: auto;
+  /* border: 2px solid red; */
+}
+
+.tutorial-video {
+  background-color: #fff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 10px;
+  width: calc(33.33% - 20px);
+  text-align: center;
+  cursor: pointer;
+  /* border: 2px solid red; */
+
+}
+.tutorial-video:hover {
+  /* background-color: #f2f2f2; */
+  border: 2px solid rgb(115, 102, 102);
+
+}
+
+.tutorial-video.active {
+  background-color: #f2f2f2;
+  border: 2px solid red;
+
+}
+
+
+.tutorial-video.completed {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.thumbnail-container {
+  position: relative;
+}
+
+.thumbnail-container img {
+  width: 100%;
+}
+
+.completed-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #6dcf74;
+}
+
+.video-player {
+  flex: 1 0 20%;
+  padding: 20px;
+  /* border: 2px solid red; */
+  /* display: none; */
+}
+
+@media screen and (max-width: 768px) {
+  .tutorial-list {
+    flex-basis: 25%;
+  }
+
+  .tutorial-videos {
+    flex-basis: 75%;
+  }
+
+  .video-list {
+    padding: 10px;
+  }
+
+  .tutorial-video {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tutorial-list {
+    display: none;
+  }
+
+  .tutorial-videos {
+    flex-basis: 100%;
+  }
+
+  .video-list {
+    padding: 10px;
+  }
+
+  .tutorial-video {
+    width: calc(100% - 20px);
+  }
+}
