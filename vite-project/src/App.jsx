@@ -17,7 +17,7 @@ function App() {
         <Route path="/register"  element = {<Register />}></Route>
         <Route path="/frontend" element = {<Frontend/>}></Route>
         <Route path="/backend" element = {<Backend />}></Route>
-        {<Route path="*" element={<ErrorPage/>}></Route>}
+        <Route path="*" element={<ErrorPage/>}></Route>
       </Routes>
     </Router>
   );
